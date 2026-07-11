@@ -1,0 +1,27 @@
+.page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); padding: 24px; position: relative; }
+.bg { position: fixed; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(245,158,11,.07) 0%, transparent 55%), radial-gradient(ellipse at 80% 20%, rgba(255,140,0,.05) 0%, transparent 50%); pointer-events: none; }
+.card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r3); padding: 44px 40px; width: 100%; max-width: 400px; position: relative; z-index: 1; box-shadow: 0 24px 64px rgba(0,0,0,.5); }
+.logoWrap { display: flex; justify-content: center; margin-bottom: 20px; }
+.logoIcon { width: 64px; height: 64px; background: linear-gradient(135deg,var(--orange),var(--amber)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 800; color: #000; box-shadow: 0 8px 24px rgba(201,168,76,.35); }
+.title { font-family: var(--serif); font-size: 28px; font-weight: 600; text-align: center; margin-bottom: 4px; }
+.sub   { font-size: 13px; color: var(--muted); text-align: center; margin-bottom: 28px; }
+.error { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.25); color: var(--red); padding: 10px 14px; border-radius: var(--r); font-size: 13px; margin-bottom: 16px; }
+.form  { display: flex; flex-direction: column; gap: 16px; }
+.passWrap { position: relative; }
+.eye  { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; font-size: 16px; padding: 2px; }
+.hint { text-align: center; margin-top: 20px; font-size: 11px; color: var(--muted); }
+.page {
+  --bg:      #0A0A0A;
+  --bg2:     #111111;
+  --bg3:     #1A1A1A;
+  --bg4:     #222222;
+  --gold:    #C9A84C;
+  --gold2:   #E8C96D;
+  --text:    #F5F0E8;
+  --muted:   #7A7060;
+  --border:  rgba(201,168,76,0.15);
+  --border2: rgba(201,168,76,0.35);
+  --glass:   rgba(201,168,76,0.04);
+  --red:     #ef4444;
+  background: #0A0A0A;
+}

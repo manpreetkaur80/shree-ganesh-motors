@@ -1,0 +1,30 @@
+.page { padding-top: 80px; }
+.hero { background: linear-gradient(135deg, var(--bg2), var(--bg)); padding: 56px 0 48px; border-bottom: 1px solid var(--border); }
+.hero .section-title em { font-style: normal; color: var(--gold); }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 40px 0 80px; }
+.left  { display: flex; flex-direction: column; gap: 16px; }
+
+.infoCard { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r2); padding: 8px 0; }
+.infoItem { display: flex; align-items: flex-start; gap: 14px; padding: 16px 20px; border-bottom: 1px solid var(--border); transition: background .2s; }
+.infoItem:last-child { border-bottom: none; }
+.infoItem:hover { background: var(--glass); }
+.infoIcon { width: 38px; height: 38px; min-width: 38px; background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.2); border-radius: var(--r); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+.infoLabel { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-weight: 600; margin-bottom: 3px; }
+.infoValue { font-size: 13px; color: var(--text); font-weight: 500; transition: color .2s; }
+a.infoValue:hover { color: var(--gold); }
+
+.ctaBtns { display: flex; gap: 12px; }
+
+.mapWrap { border-radius: var(--r2); overflow: hidden; border: 1px solid var(--border); }
+.map { width: 100%; height: 260px; display: block; filter: invert(0.9) hue-rotate(180deg); }
+
+.formCard { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r2); padding: 32px; align-self: flex-start; position: sticky; top: 100px; }
+.formCard h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin-bottom: 4px; }
+.formCard p  { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+.form { display: flex; flex-direction: column; gap: 16px; }
+
+@media(max-width:1024px) { .layout { grid-template-columns: 1fr; } .formCard { position: static; } .ctaBtns { flex-direction: column; } }
+[data-theme="light"] .hero { background: linear-gradient(135deg, var(--bg2), var(--bg)); }
+[data-theme="light"] .infoCard { background: var(--bg2); }
+[data-theme="light"] .formCard { background: var(--bg2); }
+[data-theme="light"] .mapWrap { border-color: var(--border2); }
