@@ -8,7 +8,13 @@ const app = express();
 const authRoutes = require("./routes/authRoutes");
 const galleryRoutes = require("./routes/galleryRoutes");
 const sellRequestRoutes = require("./routes/sellRequestRoutes");
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://shree-ganesh-motors.onrender.com"
+  ],
+  credentials: true
+}))
 app.use(express.json());
 
 app.use("/api/inquiries", inquiryRoutes);
