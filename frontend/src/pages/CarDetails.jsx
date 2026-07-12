@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import axios from "axios"
-import { CarDetailSkeleton } from "../components/Skeleton/Skeleton"
+import { CarDetailSkeleton } from "../components/skeleton/skeleton"
 import ShareButton from "../components/ShareButton/ShareButton"
 import styles from "./CarDetails.module.css"
 

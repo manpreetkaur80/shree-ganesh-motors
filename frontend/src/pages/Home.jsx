@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import { CarGridSkeleton } from "../components/Skeleton/Skeleton"
+import { CarGridSkeleton } from "../components/skeleton/skeleton"
 import styles from "./Home.module.css"
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
