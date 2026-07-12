@@ -1,4 +1,4 @@
-import styles from "./Skeleton.module.css"
+import styles from "./skeleton.module.css"
 
 // Base shimmer block
 export function SkeletonBlock({ width = "100%", height = "16px", radius = "6px", style = {} }) {
