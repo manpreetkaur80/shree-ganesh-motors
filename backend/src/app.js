@@ -11,7 +11,7 @@ const sellRequestRoutes = require("./routes/sellRequestRoutes");
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://shree-ganesh-motors.onrender.com"
+    "https://shree-ganesh-motors.vercel.app"
   ],
   credentials: true
 }))
