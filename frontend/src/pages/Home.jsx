@@ -89,7 +89,8 @@ function Home() {
       {/* ── HERO ── */}
       <section className={styles.hero}>
         <div className={styles.videoBg}>
-          <video autoPlay muted loop playsInline className={styles.video} poster="/hero-poster.jpg">
+          {/* <video autoPlay muted loop playsInline className={styles.video} poster="/hero-poster.jpg"> */}
+          <video autoPlay muted loop playsInline className={styles.video}>
             <source src="/hero-bg.mp4" type="video/mp4" />
           </video>
           <div className={styles.videoOverlay} />
