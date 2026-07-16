@@ -3,7 +3,7 @@ import api from "../services/api"
 import AdminNavbar from "../components/AdminNavbar"
 import styles from "./Admin.module.css"
 
-const API = "http://localhost:5000/api"
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 function timeStr(d) {
   return new Date(d).toLocaleString("en-IN", { day:"numeric", month:"short", year:"numeric", hour:"2-digit", minute:"2-digit" })
 }

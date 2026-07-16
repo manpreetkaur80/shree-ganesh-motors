@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import AdminNavbar from "../components/AdminNavbar"
 import styles from "./Admin.module.css"
 
-const API = "http://localhost:5000/api"
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 function fmt(p) { return p >= 100000 ? `₹${(p/100000).toFixed(2)}L` : `₹${Number(p).toLocaleString("en-IN")}` }
 function ago(d) { const m = Math.floor((Date.now()-new Date(d))/60000); return m < 60 ? `${m}m ago` : m < 1440 ? `${Math.floor(m/60)}h ago` : `${Math.floor(m/1440)}d ago` }
 

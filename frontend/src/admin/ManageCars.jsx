@@ -4,7 +4,7 @@ import api from "../services/api"
 import AdminNavbar from "../components/AdminNavbar"
 import styles from "./Admin.module.css"
 
-const API = "http://localhost:5000/api"
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 function fmt(p) { return p >= 100000 ? `₹${(p/100000).toFixed(2)}L` : `₹${Number(p).toLocaleString("en-IN")}` }
 
 function ManageCars() {

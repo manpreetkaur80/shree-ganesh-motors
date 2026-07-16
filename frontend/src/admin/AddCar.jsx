@@ -5,7 +5,7 @@ import AdminNavbar from "../components/AdminNavbar"
 import BrandInput from "./BrandInput"
 import styles from "./Admin.module.css"
 
-const API = "http://localhost:5000/api"
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 
 const EMPTY = { title:"", brand:"", model:"", year:"", fuelType:"", transmission:"", kmDriven:"", price:"", description:"" }
 
