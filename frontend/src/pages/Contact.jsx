@@ -69,8 +69,16 @@ function Contact() {
             <div className={styles.mapWrap}>
              {/* ?<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3670.870913036604!2d72.55000757531506!3d23.06519367914395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAzJzU0LjciTiA3MsKwMzMnMDkuMyJF!5e0!3m2!1sen!2sin!4v1784203710075!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> */}
          
-             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3670.870913036604!2d72.55000757531506!3d23.06519367914395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAzJzU0LjciTiA3MsKwMzMnMDkuMyJF!5e0!3m2!1sen!2sin!4v1784204120678!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-             </div>
+          <iframe
+  src="https://www.google.com/maps?q=23.0651937,72.5525825&z=18&output=embed"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Shree Ganesh Motors Location"
+></iframe>  </div>
           </div>
 
           {/* Right — Contact Form */}
