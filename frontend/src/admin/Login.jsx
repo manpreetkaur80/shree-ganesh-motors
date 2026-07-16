@@ -62,7 +62,7 @@ function Login() {
             <input
               className="input"
               type="email"
-              placeholder="sonusingh5508@gmail.com"
+              placeholder="enter email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               autoComplete="email"
