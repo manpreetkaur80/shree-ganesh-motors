@@ -22,7 +22,7 @@ function Footer() {
           <p>Your trusted destination for quality used cars, RTO work, and complete automobile solutions in Ahmedabad, Gujarat.</p>
           <div className={styles.socials}>
             <a href={`https://wa.me/${WA}`} target="_blank" rel="noreferrer" className={styles.social} title="WhatsApp">💬</a>
-            <a href="tel:+919876543210" className={styles.social} title="Call">📞</a>
+            <a href="tel:+919825086109" className={styles.social} title="Call">📞</a>
           </div>
         </div>
 
