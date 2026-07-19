@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import axios from "axios"
 import styles from "./Services.module.css"
 
-const API = "http://localhost:5000/api"
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 
 const SERVICES = [
   { icon:"🚗", title:"Buy Pre-Owned Cars",      desc:"Browse our verified inventory of quality inspected used vehicles at fair market prices. Every car comes with full history." },
